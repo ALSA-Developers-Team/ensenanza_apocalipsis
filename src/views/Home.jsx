@@ -13,10 +13,10 @@ function Home() {
         <h1 className="text-center">
           Bienvenido a la mejor plataforma de Enseñanza del Apocalipsis!
         </h1>
-        <p className="text-cente">
+        {/* <p className="text-cente">
           Esta es una plataforma dinamica, con contenido de enriquesimiento
           espiritual.
-        </p>
+        </p> */}
       </div>
       <CoursesList />
     </>
