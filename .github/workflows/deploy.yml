@@ -26,8 +26,9 @@ jobs:
         passphrase: ${{ secrets.DEPLOY_PASSPHRASE }}
         port: 22
         script: |
+          pm2 stop pap
           cd /var/www/pap.alsadevteam.com
           git pull origin master
           git status
-          npm install --only=prod
-          pm2 restart pap
+          npm install
+          pm2 start npm --name "pap" -- start
