@@ -31,4 +31,5 @@ jobs:
           git pull origin master
           git status
           npm install
+          ${{ secrets.DEPLOY_ENV }}
           pm2 start npm --name "pap" -- start
