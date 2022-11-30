@@ -20,10 +20,10 @@ jobs:
     - name: Deploy using ssh
       uses: appleboy/ssh-action@master
       with:
-        host: 45.79.58.122
-        username: root
-        key: ${{ secrets.ALSADEVTEAM_ALDOVPS_SECRET }}
-        passphrase: fitec40
+        host: ${{ secrets.DEPLOY_HOST }}
+        username: ${{ secrets.DEPLOY_USERNAME }}
+        key: ${{ secrets.ALDO_VPS_SECRET }}
+        passphrase: ${{ secrets.DEPLOY_PASSPHRASE }}
         port: 22
         script: |
           cd /var/www/pap.alsadevteam.com
