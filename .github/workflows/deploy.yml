@@ -23,6 +23,7 @@ jobs:
         host: 45.79.58.122
         username: root
         key: ${{ secrets.ALSADEVTEAM_ALDOVPS_SECRET }}
+        passphrase: fitec40
         port: 22
         script: |
           cd /var/www/pap.alsadevteam.com
